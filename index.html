@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+        </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    
+</head>
+<body>  
+   
+    <nav id="desktop-nav">
+    <div class="logo"> Sumit Bubanale </div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Sumit Bubanale </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"  onclick="toggleMenu()" >About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project"  onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/pic.jpg" alt="Sumit" width="200px" height="250px">
+        </div>
+         <div class="section_text">
+            <p class="section_page_p1">Hello, I'm</p>
+            <p class="title">Sumit Bubanale</p>
+            <p class="section_page_p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/ieee.PDF')">Download CV</button>
+            
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">contact info </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkdein Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sumit-bubanale-10a07b25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="./assets/github.png" alt="My Linkdein Profile" class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
